@@ -2,7 +2,7 @@ import styled, { component } from 'app/styled-components';
 import delayEffect from 'common/utils/animation/delay-effect';
 
 export default styled(component<{
-  delay: number
+  delay?: number
 }>('h2'))`
   ${props =>
     props.delay != null && delayEffect(props.delay || 0)} text-align: center;
